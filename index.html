@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Ordering System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="app-shell">
+        <aside class="sidebar" id="sidebar">
+            <div class="brand">
+                <div class="brand-mark" aria-hidden="true">🍔</div>
+                <h1>Foodie's Restaurant</h1>
+                <p>Fresh food, made with love.</p>
+            </div>
+
+            <nav aria-label="Main navigation">
+                <h2>Quick Links</h2>
+                <a href="#menu-section">01. Home</a>
+                <a href="#order-section">02. Your Orders</a>
+                <a href="#order-section">03. Wallet</a>
+                <a href="#menu-section">04. Profile</a>
+                <a href="#footer">05. Logout</a>
+            </nav>
+
+            <nav class="sidebar-secondary" aria-label="Restaurant links">
+                <h2>More About Us</h2>
+                <a href="#footer">01. Our blog</a>
+                <a href="#menu-section">02. Upcoming Dishes</a>
+                <a href="#footer">03. Our Story</a>
+                <a href="#footer">04. Social Media Links</a>
+            </nav>
+        </aside>
+
+        <div class="content-shell">
+            <header class="topbar">
+                <button class="hamburger" id="menuToggle" type="button" aria-controls="sidebar" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                    <span class="sr-only">Toggle navigation</span>
+                </button>
+                <label class="search">
+                    <span aria-hidden="true">⌕</span>
+                    <input type="search" placeholder="Search food item" aria-label="Search food item">
+                </label>
+                <div class="topbar-actions">
+                    <button class="button button-outline" type="button">Sign up</button>
+                    <button class="button" type="button">Login</button>
+                    <span class="avatar" aria-label="User profile">👨🏻‍🍳</span>
+                </div>
+            </header>
+
+            <main>
+                <section class="hero" aria-label="Weekend special">
+                    <div>
+                        <p class="eyebrow">Weekend special</p>
+                        <h2>Delicious<br><strong>food menu</strong></h2>
+                        <p class="hero-copy">Big flavours, fresh ingredients,<br>and a little love in every bite.</p>
+                        <a class="hero-button" href="#menu-section">Order now <span>→</span></a>
+                    </div>
+                    <div class="hero-badge">Up to<br><strong>50%</strong><br>off</div>
+                </section>
+
+                <section id="menu-section" class="menu-section">
+                    <div class="section-heading">
+                        <div>
+                            <p class="eyebrow">Fresh from the kitchen</p>
+                            <h2>Our menu</h2>
+                        </div>
+                        <span class="menu-count">All favourites</span>
+                    </div>
+                    <div id="menu" class="menu-grid">
+                        <p>Loading menu...</p>
+                    </div>
+                </section>
+
+                <section id="order-section" class="order-section">
+                    <div>
+                        <p class="eyebrow">Fast and easy</p>
+                        <h2>Your order</h2>
+                    </div>
+                    <div class="order-content">
+                        <p id="orderStatus">Browse our menu to get started.</p>
+                        <div id="orderDetails"></div>
+                        <button id="orderBtn" class="button order-button">Place random order</button>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="footer">
+                <p>© 2026 Foodie's Restaurant</p>
+                <p>Made for food lovers.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
